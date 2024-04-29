@@ -1,0 +1,56 @@
+.electronics-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+
+  }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+
+  }
+  .cards-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    transform: scale(1.01);
+
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensure cards take up equal height */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Limit the max height of the image */
+    object-fit: contain; /* Ensures images maintain aspect ratio and fit inside */
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    margin: 5px 0;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .card p.price {
+    font-size: 18px; /* Adjust the font size for price */
+    font-weight: bold;
+  }
+  
